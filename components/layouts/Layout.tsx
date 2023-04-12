@@ -29,6 +29,8 @@ export const Layout: FC<Props> = ({ children, title }) => {
                 <meta property="og:title" content={`Información sobre ${title}`} />
                 <meta property="og:description" content={`Pagina de datos de ${title} `} />
                 <meta property="og:image" content={`${origin}/img/banner.png`} />
+                <meta property="og:image:widht" content="250" />
+                <meta property='og:image:height' content="200" /> 
             </Head>
 
             <Navbarc/>
