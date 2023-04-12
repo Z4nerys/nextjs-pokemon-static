@@ -24,7 +24,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
   const onToggleFavorite = () => {
     localFavorites.toggleFavorite(pokemon.id)
     setIsInFavorites(!isInFavorites)
-    if (!isInFavorites) return
+    if (isInFavorites) return
 
     confetti({
       zIndex: 999,
